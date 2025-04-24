@@ -1,10 +1,11 @@
 import React from 'react'
 import App from './App'
 import Landing from './pages/Landing/Landing.jsx'
-import Workouts from './pages/pages/Workouts/Workouts.jsx'
-import Nutrition from './pages/pages/Nutrition/Nutrition.jsx'
-import Community from './pages/pages/Community/Community.jsx'
-import Challenges from './pages/pages/Challenges/Challenges.jsx'
+import Workouts from './pages/Workouts/Workouts.jsx'
+import Nutrition from './pages/Nutrition/Nutrition.jsx'
+import Community from './pages/Community/Community.jsx'
+import Challenges from './pages/Challenges/Challenges.jsx'
+import { Routes, Route } from 'react-router-dom'
 
 export default function Layout() {
   return (

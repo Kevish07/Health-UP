@@ -16,7 +16,7 @@ const Landing = ({ SidebarToggle }) => {
     },
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex-col flex-1 overflow-y-auto flex justify-center items-center ">
       <motion.div
         className="dashboard"
         initial="hidden"
