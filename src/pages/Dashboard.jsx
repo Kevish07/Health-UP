@@ -2,10 +2,10 @@ import React from 'react';
 import HeroSection from '../components/dashboard/HeroSection';
 import StatsSection from '../components/dashboard/StatsSection';
 
-const Dashboard = () => {
+const Dashboard = ({SidebarToggle}) => {
   return (
     <div className="flex flex-col">
-      <HeroSection />
+      <HeroSection SidebarToggle={SidebarToggle}/>
       <StatsSection />
     </div>
   );

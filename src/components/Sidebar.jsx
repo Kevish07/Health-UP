@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import { Activity, BarChart2, Dumbbell, Utensils, Users, Trophy } from 'lucide-react';
+import { Activity, BarChart2, Dumbbell, Utensils, Users, Trophy, House, } from 'lucide-react';
 
 const Sidebar = () => {
-  const [activeLink, setActiveLink] = useState('dashboard');
+  const [activeLink, setActiveLink] = useState('home');
 
   const links = [
+    { id: 'home', label: 'Home', icon: House },
     { id: 'dashboard', label: 'Dashboard', icon: BarChart2 },
     { id: 'workouts', label: 'Workouts', icon: Dumbbell },
     { id: 'nutrition', label: 'Nutrition', icon: Utensils },
     { id: 'community', label: 'Community', icon: Users },
-    { id: 'challenges', label: 'Challenges', icon: Trophy }
+    { id: 'challenges', label: 'Challenges', icon: Trophy },
   ];
 
   const handleNavigation = (linkId) => {
@@ -18,7 +19,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 h-full bg-white border-r border-gray-200 flex flex-col">
+    <div className="w-64 h-full bg-white border-r border-gray-200 flex flex-col pt-16 ">
       {/* Logo */}
       <div className="p-6">
         <div className="flex items-center">

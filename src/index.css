@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   html {
@@ -9,11 +6,13 @@
   }
   
   body {
-    @apply bg-gray-50 text-gray-900;
+    background-color: #f9fafb; /* Equivalent to bg-gray-50 */
+    color: #111827; /* Equivalent to text-gray-900 */
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-medium leading-tight;
+    font-weight: 500; /* Equivalent to font-medium */
+    line-height: 1.25; /* Equivalent to leading-tight */
   }
 }
 

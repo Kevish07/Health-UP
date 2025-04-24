@@ -2,7 +2,7 @@ import React from 'react';
 import { Play } from 'lucide-react';
 import ProgressIndicator from './ProgressIndicator';
 
-const HeroSection = () => {
+const HeroSection = ({SidebarToggle}) => {
   return (
     <div className="relative bg-emerald-50 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
@@ -19,10 +19,10 @@ const HeroSection = () => {
               and connecting with a community that keeps you motivated.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg shadow-md hover:bg-emerald-700 transition-all duration-200">
+              <button onClick={SidebarToggle} className="px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg shadow-md hover:bg-emerald-700 transition-all duration-200 cursor-pointer">
                 Get Started
               </button>
-              <button className="px-6 py-3 bg-white text-emerald-600 font-medium rounded-lg shadow-sm border border-emerald-200 hover:bg-emerald-50 transition-all duration-200 flex items-center">
+              <button className="px-6 py-3 bg-white text-emerald-600 font-medium rounded-lg shadow-sm border border-emerald-200 hover:bg-emerald-50 transition-all duration-200 flex items-center cursor-pointer">
                 <Play className="h-4 w-4 mr-2" />
                 How it works
               </button>

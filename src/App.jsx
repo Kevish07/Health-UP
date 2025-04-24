@@ -15,7 +15,7 @@ function App() {
       {/* Sidebar toggle button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50 transition-all duration-200"
+        className="fixed top-4 left-4 z-50 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50 transition-all duration-200 cursor-pointer"
       >
         <ChevronRight className={`h-6 w-6 text-gray-600 transform transition-transform duration-200 ${showSidebar ? 'rotate-180' : ''}`} />
       </button>
@@ -28,7 +28,7 @@ function App() {
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-hidden bg-emerald-50 ">
         <main className="flex-1 overflow-y-auto">
-          <Dashboard />
+          <Dashboard SidebarToggle={toggleSidebar}/>
         </main>
       </div>
     </div>
