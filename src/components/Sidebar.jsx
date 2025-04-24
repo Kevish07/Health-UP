@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   const links = [
     { id: 'home', label: 'Home', icon: House },
-    { id: 'dashboard', label: 'Dashboard', icon: BarChart2 },
+    { id: 'landing', label: 'Landing', icon: BarChart2 },
     { id: 'workouts', label: 'Workouts', icon: Dumbbell },
     { id: 'nutrition', label: 'Nutrition', icon: Utensils },
     { id: 'community', label: 'Community', icon: Users },

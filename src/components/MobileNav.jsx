@@ -33,7 +33,7 @@ const MobileNav = () => {
             </div>
             
             <nav className="px-4 py-6 space-y-2">
-              <NavLink icon={<BarChart2 />} label="Dashboard" active />
+              <NavLink icon={<BarChart2 />} label="Landing" active />
               <NavLink icon={<Dumbbell />} label="Workouts" />
               <NavLink icon={<Utensils />} label="Nutrition" />
               <NavLink icon={<Users />} label="Community" />

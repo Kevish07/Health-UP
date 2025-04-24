@@ -16,6 +16,27 @@
   }
 }
 
+/* 
+:root {
+  --color-primary: #3a9e78;
+  --color-primary-dark: #2c8b67;
+  --color-primary-light: #eaf7f3;
+  --color-secondary: #4a5568;
+  --color-accent: #f56565;
+  --color-success: #38a169;
+  --color-warning: #ed8936;
+  --color-error: #e53e3e;
+  --color-background: #ffffff;
+  --color-text: #2d3748;
+  --color-text-light: #718096;
+  --color-border: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --transition-default: all 0.2s ease-in-out;
+} */
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

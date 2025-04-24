@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
-import Dashboard from './pages/Dashboard';
+import Landing from './pages/Landing/Landing';
 import { ChevronRight } from 'lucide-react';
 
 function App() {
@@ -27,8 +27,8 @@ function App() {
       
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-hidden bg-emerald-50 ">
-        <main className="flex-1 overflow-y-auto">
-          <Dashboard SidebarToggle={toggleSidebar}/>
+        <main className="flex-1 overflow-y-auto flex justify-center items-center ">
+          <Landing SidebarToggle={toggleSidebar}/>
         </main>
       </div>
     </div>
