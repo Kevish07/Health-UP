@@ -1,37 +1,29 @@
-import { motion } from 'framer-motion'
-import HeroSection from './HeroSection.jsx'
-import StatsSection from './StatsSection.jsx'
-import ProgressCard from '../../components/UI/ProgressCard.jsx'
-import './Dashboard.css'
+import React from 'react';
+import Header from './DashComponents/Header';
+import UserProfile from './DashComponents/UserProfile';
+import MetricsGrid from './DashComponents/MetricsGrid';
+import WeeklyActivity from './DashComponents/WeeklyActivity';
+import UpcomingWorkouts from './DashComponents/UpcomingWorkouts';
 
 function Dashboard() {
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  }
   
   return (
-    <motion.div
-      className="dashboard"
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-    >
-      <HeroSection />
-      <StatsSection />
-      
-      {/* Progress card positioned absolutely */}
-      <ProgressCard 
-        percentage={78} 
-        title="Today's Progress" 
+    <div className="p-6 max-w-6xl mx-auto">
+      <UserProfile 
+        name="Sarah Johnson" 
+        status="Premium Member" 
+        avatar="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150" 
       />
-    </motion.div>
+      
+      <Header date="April 24, 2025" />
+      
+      <MetricsGrid />
+      
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <WeeklyActivity />
+        <UpcomingWorkouts />
+      </div>
+    </div>
   )
 }
 

@@ -5,6 +5,7 @@ import Workouts from './pages/Workouts/Workouts.jsx'
 import Nutrition from './pages/Nutrition/Nutrition.jsx'
 import Community from './pages/Community/Community.jsx'
 import Challenges from './pages/Challenges/Challenges.jsx'
+import Dashboard  from "./pages/Dashboard/Dashboard.jsx"
 import { Routes, Route } from 'react-router-dom'
 
 export default function Layout() {
@@ -16,6 +17,7 @@ export default function Layout() {
         <Route path="/nutrition" element={<Nutrition />} />
         <Route path="/community" element={<Community />} />
         <Route path="/challenges" element={<Challenges />} />
+        <Route path="/profile" element={<Dashboard />} />
       </Routes>
     </App>
   )
