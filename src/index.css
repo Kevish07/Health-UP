@@ -66,3 +66,61 @@ html {
     transform: translateY(0);
   }
 }
+
+
+.progress-bar-blue {
+  background: linear-gradient(90deg, #4263EB 0%, #5E81FF 100%);
+}
+
+.progress-bar-orange {
+  background: linear-gradient(90deg, #FF6B00 0%, #FF9F5A 100%);
+}
+
+.progress-bar-purple {
+  background: linear-gradient(90deg, #8A3FFC 0%, #A66BFF 100%);
+}
+
+.progress-bar-teal {
+  background: linear-gradient(90deg, #00A3A1 0%, #39C6C4 100%);
+}
+
+/* .nav-item {
+  @apply flex items-center gap-3 px-6 py-3 text-gray-600 rounded-lg transition-all duration-300;
+}
+
+.nav-item:hover {
+  @apply bg-blue-50 text-blue-700;
+}
+
+.nav-item.active {
+  @apply bg-blue-50 text-blue-700 font-medium;
+} */
+
+.metric-card {
+  @apply bg-white p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md relative overflow-hidden;
+}
+
+.card-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.play-button {
+  @apply flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 transition-transform duration-300;
+}
+
+.play-button:hover {
+  @apply transform scale-110;
+}
+
+.workout-item:hover .play-button {
+  @apply transform scale-110;
+}
