@@ -45,7 +45,7 @@ export default function ExerciseDetailsModal({ exercise, onClose, onAddToWorkout
             </div>
           </div>
 
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -78,7 +78,7 @@ export default function ExerciseDetailsModal({ exercise, onClose, onAddToWorkout
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex-1 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium"
+            className="flex-1 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium cursor-pointer"
             onClick={onAddToWorkout}
           >
             Add to Workout
@@ -87,7 +87,7 @@ export default function ExerciseDetailsModal({ exercise, onClose, onAddToWorkout
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex-1 py-2 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors text-sm font-medium"
+            className="flex-1 py-2 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors text-sm font-medium cursor-pointer"
             onClick={onWatchTutorial}
           >
             Watch Tutorial

@@ -1,5 +1,3 @@
-"use client"
-
 import { motion } from "framer-motion"
 import { Search, Plus } from "lucide-react"
 

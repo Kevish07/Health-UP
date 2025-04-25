@@ -7,7 +7,7 @@ export default function ProgramCard({ program, index, onViewProgram }) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+      transition={{ duration: 0.2, delay: 0 + index * 0.1 }}
       whileHover={{ y: -5 }}
       className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100"
     >
@@ -59,7 +59,7 @@ export default function ProgramCard({ program, index, onViewProgram }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => onViewProgram(program)}
-            className="text-green-500 hover:text-green-700 text-sm font-medium transition-colors"
+            className="text-green-500 hover:text-green-700 text-sm font-medium transition-colors cursor-pointer"
           >
             View Program
           </motion.button>

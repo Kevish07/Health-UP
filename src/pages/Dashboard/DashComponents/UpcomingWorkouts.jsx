@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkoutItem from './WorkoutItem';
 import { Dumbbell, FileWarning as Running, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router';
 
 const UpcomingWorkouts = () => {
   const workouts = [
@@ -39,13 +40,13 @@ const UpcomingWorkouts = () => {
       </div>
       
       <div className="mt-6">
-        <a 
-          href="#" 
+        <Link
+          to="/workouts" 
           className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors duration-200"
         >
           View all workouts
           <ChevronRight size={16} className="ml-1" />
-        </a>
+        </Link>
       </div>
     </div>
   );

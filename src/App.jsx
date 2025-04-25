@@ -26,7 +26,7 @@ function App({ children }) {
       </div>
       
       {/* Main content */}
-        <main className="flex-1 flex flex-col bg-emerald-50 h-fit ">
+        <main className="flex-1 flex flex-col bg-emerald-50 min-h-full h-fit ">
           {children}
           {/* <Landing SidebarToggle={toggleSidebar}/> */}
         </main>

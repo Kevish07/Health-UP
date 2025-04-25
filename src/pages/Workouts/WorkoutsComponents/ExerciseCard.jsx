@@ -51,7 +51,7 @@ export default function ExerciseCard({ exercise, index, onViewExercise }) {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={() => onViewExercise(exercise)}
-        className="w-full py-2 text-center border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors text-sm font-medium"
+        className="w-full py-2 text-center border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors text-sm font-medium cursor-pointer"
       >
         View Exercise
       </motion.button>

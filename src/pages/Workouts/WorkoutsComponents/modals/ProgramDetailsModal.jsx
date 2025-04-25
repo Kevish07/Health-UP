@@ -8,7 +8,7 @@ export default function ProgramDetailsModal({ program, onClose, onStart }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 flex items-center justify-center p-4 z-50"
+      className="fixed inset-0 bg-green-100/50 flex items-center justify-center p-4 z-50"
       onClick={onClose}
     >
       <motion.div
@@ -48,7 +48,7 @@ export default function ProgramDetailsModal({ program, onClose, onStart }) {
               </div>
             </div>
 
-            <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+            <button onClick={onClose} className="text-gray-500 hover:text-gray-700 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -100,9 +100,9 @@ export default function ProgramDetailsModal({ program, onClose, onStart }) {
 
           <div className="mt-8">
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
-              className={`w-full py-3 rounded-lg font-medium ${
+              className={`w-full py-3 rounded-lg cursor-pointer font-medium ${
                 program.premium
                   ? "bg-green-500 hover:bg-green-600 text-white"
                   : "bg-blue-500 hover:bg-blue-600 text-white"

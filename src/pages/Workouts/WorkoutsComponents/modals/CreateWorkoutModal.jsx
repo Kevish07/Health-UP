@@ -8,7 +8,7 @@ export default function CreateWorkoutModal({ onClose, onSave }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-opacity-50 flex items-center justify-center p-4 z-50"
+      className="fixed inset-0 bg-green-100/50 flex items-center justify-center p-4 z-50"
       onClick={onClose}
     >
       <motion.div
@@ -56,7 +56,7 @@ export default function CreateWorkoutModal({ onClose, onSave }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onClose}
-            className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+            className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer"
           >
             Cancel
           </motion.button>
@@ -65,7 +65,7 @@ export default function CreateWorkoutModal({ onClose, onSave }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onSave}
-            className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+            className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors cursor-pointer"
           >
             Create
           </motion.button>
