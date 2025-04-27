@@ -31,7 +31,7 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
 export const Button = forwardRef(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
