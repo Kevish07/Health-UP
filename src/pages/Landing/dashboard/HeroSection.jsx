@@ -25,7 +25,7 @@ const HeroSection = ({ SidebarToggle }) => {
   };
 
   return (
-    <div className="relative bg-emerald-50 overflow-hidden">
+    <div className="relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left content */}

@@ -1,10 +1,10 @@
 import React from "react";
-import HeroSection from "../../components/dashboard/HeroSection";
-import StatsSection from "../../components/dashboard/StatsSection";
+import HeroSection from "./dashboard/HeroSection";
+import StatsSection from "./dashboard/StatsSection";
 import ProgressCard from "../../components/UI/ProgressCard.jsx";
 import { motion } from "framer-motion";
 
-const Landing = ({ SidebarToggle }) => {
+const Landing = () => {
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -23,7 +23,7 @@ const Landing = ({ SidebarToggle }) => {
         animate="visible"
         variants={containerVariants}
       >
-        <HeroSection SidebarToggle={SidebarToggle} />
+        <HeroSection />
         <StatsSection />
 
         <ProgressCard percentage={78} title="Today's Progress" />

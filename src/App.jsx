@@ -1,36 +1,18 @@
-import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import Landing from './pages/Landing/Landing';
-import { ChevronRight } from 'lucide-react';
+import React, { useState } from "react";
+import SidebarDemo from "./components/sidebar-demo";
 
 function App({ children }) {
-  const [showSidebar, setShowSidebar] = useState(false);
-
-  const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-  };
-
   return (
-    <div className="flex h-screen bg-gray-50">
-      {/* Sidebar toggle button */}
-      <button
-        onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 p-2 bg-white rounded-full shadow-lg hover:bg-gray-50 transition-all duration-200 cursor-pointer"
-      >
-        <ChevronRight className={`h-6 w-6 text-gray-600 transform transition-transform duration-200 ${showSidebar ? 'rotate-180' : ''}`} />
-      </button>
+    <div className="flex bg-gray-50">
+      <div className="h-screen">
+        <SidebarDemo />
+      </div>
 
-      {/* Sidebar */}
-      <div className={`fixed inset-y-0 left-0 transform ${showSidebar ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-30`}>
-        <Sidebar />
-      </div>
-      
       {/* Main content */}
-        <main className="flex-1 flex flex-col bg-emerald-50 min-h-full h-fit ">
-          {children}
-          {/* <Landing SidebarToggle={toggleSidebar}/> */}
-        </main>
-      </div>
+      <main className="flex-1 flex flex-col bg-emerald-100 min-h-screen h-fit ">
+        {children}
+      </main>
+    </div>
   );
 }
 
