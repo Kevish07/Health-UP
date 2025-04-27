@@ -1,9 +1,10 @@
+import FitnessChallenge from "./ChallengeComponents/fitness-challenge"
+
 function Challenges() {
   return (
-    <div className="page-container">
-      <h1>Challenges</h1>
-      <p>Participate in fitness challenges to stay motivated.</p>
-    </div>
+    <>
+      <FitnessChallenge />
+    </>
   )
 }
 
