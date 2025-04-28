@@ -15,7 +15,7 @@ const Dropdown = ({
         </label>
       )}
       <select
-        className="dropdown-select"
+        className="dropdown-select w-full p-3 bg-white border border-gray-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary/30"
         value={value}
         onChange={(e) => onChange(e.target.value)}
       >

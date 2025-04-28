@@ -15,7 +15,7 @@ function Dashboard() {
         avatar="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150" 
       />
       
-      <Header date="April 24, 2025" />
+      <Header />
       
       <MetricsGrid />
       
