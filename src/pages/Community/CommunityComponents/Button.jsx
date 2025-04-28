@@ -35,7 +35,7 @@ const Button = ({
   
   return (
     <button
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${disabledStyles} ${widthStyles} ${className}`}
+      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${disabledStyles} ${widthStyles} ${className} cursor-pointer`}
       disabled={disabled || isLoading}
       {...props}
     >

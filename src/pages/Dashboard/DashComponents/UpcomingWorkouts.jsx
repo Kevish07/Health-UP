@@ -22,7 +22,7 @@ const UpcomingWorkouts = () => {
   ];
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-sm card-container">
+    <div className="bg-white p-6 rounded-xl shadow-sm opacity-0 translate-y-5 animate-fade-in-up">
       <h2 className="text-xl font-semibold mb-6">Upcoming Workouts</h2>
       
       <div className="space-y-4">

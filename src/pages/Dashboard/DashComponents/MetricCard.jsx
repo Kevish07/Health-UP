@@ -18,10 +18,10 @@ const MetricCard = ({ title, value, goalValue, icon, color, unit, index }) => {
 
   // Map color to classes
   const colorClasses = {
-    blue: "progress-bar-blue",
-    orange: "progress-bar-orange",
-    purple: "progress-bar-purple",
-    teal: "progress-bar-teal",
+    blue: "bg-[linear-gradient(90deg,_#4263EB_0%,_#5E81FF_100%)]",
+    orange: "bg-gradient-to-r from-[#FF6B00] to-[#FF9F5A]",
+    purple: "bg-gradient-to-r from-[#8A3FFC] to-[#A66BFF]",
+    teal: "bg-gradient-to-r from-[#00A3A1] to-[#39C6C4]",
   };
 
   // Map color to background classes
@@ -42,7 +42,7 @@ const MetricCard = ({ title, value, goalValue, icon, color, unit, index }) => {
 
   return (
     <div
-      className="metric-card card-container"
+      className="bg-white p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md relative overflow-hidden opacity-0 translate-y-5 animate-fade-in-up"
       style={{ animationDelay: `${index * 150}ms` }}
     >
       <div className="flex justify-between mb-2">

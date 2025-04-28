@@ -19,7 +19,7 @@ function UserCard({ user, onConnect, isConnected = false }) {
 
   return (
     <div 
-      className="card p-6 mb-6 animate-fade-in hover:shadow-lg transition-shadow duration-300"
+      className="bg-white rounded-xl shadow-sm p-6 mb-6 animate-fade-in hover:shadow-lg transition-shadow duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -36,11 +36,11 @@ function UserCard({ user, onConnect, isConnected = false }) {
             <h3 className="text-xl font-semibold">{user.name}</h3>
             <p className="text-gray-600">{user.specialty}</p>
             <div className="flex items-center gap-4 mt-2">
-              <div className="achievement-badge">
+              <div className="inline-flex items-center gap-1.5 text-gray-600">
                 <MapPin size={16} />
                 <span>{user.location}</span>
               </div>
-              <div className="achievement-badge">
+              <div className="inline-flex items-center gap-1.5 text-gray-600">
                 <Award size={16} />
                 <span>{user.achievements} Achievements</span>
               </div>
@@ -63,11 +63,11 @@ function UserCard({ user, onConnect, isConnected = false }) {
         {user.stats.map((stat, index) => (
           <div 
             key={index} 
-            className="profile-stat animate-slide-up"
+            className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-lg animate-slide-up"
             style={{ animationDelay: `${index * 100}ms` }}
           >
-            <div className="stat-value">{stat.value}{stat.unit ? ` ${stat.unit}` : ''}</div>
-            <div className="stat-label">{stat.label}</div>
+            <div className="text-2xl font-bold mb-1">{stat.value}{stat.unit ? ` ${stat.unit}` : ''}</div>
+            <div className="text-sm text-gray-600">{stat.label}</div>
           </div>
         ))}
       </div>

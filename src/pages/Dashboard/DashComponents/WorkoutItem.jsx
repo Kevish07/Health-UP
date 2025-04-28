@@ -4,7 +4,7 @@ import { Play } from "lucide-react";
 const WorkoutItem = ({ icon, title, time, duration, iconBg, index }) => {
   return (
     <div
-      className="flex items-center justify-between p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 workout-item card-container"
+      className="flex items-center justify-between p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 workout-item opacity-0 translate-y-5 animate-fade-in-up"
       style={{ animationDelay: `${300 + index * 100}ms` }}
     >
       <div className="flex items-center">
@@ -22,7 +22,7 @@ const WorkoutItem = ({ icon, title, time, duration, iconBg, index }) => {
         </div>
       </div>
 
-      <button className="play-button">
+      <button className="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 transition-transform duration-300 hover:scale-110">
         <Play size={16} />
       </button>
     </div>
