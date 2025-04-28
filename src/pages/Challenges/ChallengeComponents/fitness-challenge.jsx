@@ -67,7 +67,7 @@ export default function FitnessChallenge() {
         {/* Left Column - Challenge Details */}
         <div className="md:col-span-2">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-gray-800">Today&apos;s Challenge</h1>
+            <h1 className="text-3xl font-bold text-gray-800">Today&apos;s Challenge</h1>
             <div className="flex items-center gap-2">
               <span className="text-gray-600">{currentDate}</span>
               <span className="rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">Day 45</span>

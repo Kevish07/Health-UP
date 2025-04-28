@@ -3,6 +3,7 @@ import HeroSection from "./dashboard/HeroSection";
 import StatsSection from "./dashboard/StatsSection";
 import ProgressCard from "../../components/UI/ProgressCard.jsx";
 import { motion } from "framer-motion";
+import ScrollLanding from "./main/ScrollLanding.jsx";
 
 const Landing = () => {
   // Animation variants
@@ -25,7 +26,7 @@ const Landing = () => {
       >
         <HeroSection />
         <StatsSection />
-
+        <ScrollLanding/>
         <ProgressCard percentage={78} title="Today's Progress" />
       </motion.div>
     </div>
