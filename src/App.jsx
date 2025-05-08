@@ -8,7 +8,6 @@ function App({ children }) {
         <SidebarDemo />
       </div>
 
-      {/* Main content */}
       <main className="flex-1 flex flex-col bg-emerald-100 min-h-screen h-fit ">
         {children}
       </main>

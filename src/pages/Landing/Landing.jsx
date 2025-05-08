@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import ScrollLanding from "./main/ScrollLanding.jsx";
 
 const Landing = () => {
-  // Animation variants
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

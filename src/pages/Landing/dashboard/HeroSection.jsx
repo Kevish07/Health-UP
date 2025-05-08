@@ -1,8 +1,6 @@
 import React from "react";
-import { Play } from "lucide-react";
 import { FiPlay } from "react-icons/fi";
 import { motion } from "framer-motion";
-import ProgressIndicator from "./ProgressIndicator";
 
 const HeroSection = ({ SidebarToggle }) => {
   const containerVariants = {

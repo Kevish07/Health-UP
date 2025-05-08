@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Clock, Flame, Trophy, Video } from "lucide-react"
@@ -48,10 +46,8 @@ export default function FitnessChallenge() {
     if (timer > personalBest) {
       setPersonalBest(timer)
     }
-
     // Reset timer
     setTimer(0)
-
     // Increment streak
     setCurrentStreak((prev) => prev + 1)
   }
@@ -220,7 +216,7 @@ export default function FitnessChallenge() {
           </div>
         </div>
 
-        {/* Right Column - Stats (without leaderboard) */}
+        {/* Right Column - Stats */}
         <div className="space-y-8">
           {/* Streak */}
           <StreakCounter streak={currentStreak} personalBest={personalBest} />
