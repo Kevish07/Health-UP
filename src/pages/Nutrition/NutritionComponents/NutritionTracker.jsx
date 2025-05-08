@@ -30,12 +30,12 @@ export default function NutritionTracker() {
   // State for recent meals
   const [recentMeals, setRecentMeals] = useState([
     {
-      id: 1,
-      type: "Breakfast",
-      time: "Today, 7:30 AM",
-      calories: 445,
-      items: 3,
-      icon: "☕",
+      id: 3,
+      type: "Snack",
+      time: "Today, 3:30 PM",
+      calories: 320,
+      items: 2,
+      icon: "🍎",
     },
     {
       id: 2,
@@ -46,12 +46,12 @@ export default function NutritionTracker() {
       icon: "🍴",
     },
     {
-      id: 3,
-      type: "Snack",
-      time: "Today, 3:30 PM",
-      calories: 320,
-      items: 2,
-      icon: "🍎",
+      id: 1,
+      type: "Breakfast",
+      time: "Today, 7:30 AM",
+      calories: 445,
+      items: 3,
+      icon: "☕",
     },
   ])
 
