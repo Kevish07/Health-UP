@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import ScrollLanding from "./main/ScrollLanding.jsx";
 
 const Landing = () => {
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -26,7 +25,7 @@ const Landing = () => {
       >
         <HeroSection />
         <StatsSection />
-        <ScrollLanding/>
+        <ScrollLanding />
         <ProgressCard percentage={78} title="Today's Progress" />
       </motion.div>
     </div>

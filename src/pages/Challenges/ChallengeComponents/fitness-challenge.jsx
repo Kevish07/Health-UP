@@ -57,7 +57,7 @@ export default function FitnessChallenge() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="max-w-7xl mx-auto  w-full rounded-xl p-6 shadow-lg"
+      className="max-w-7xl mx-auto my-auto w-full rounded-xl p-6 shadow-lg"
     >
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {/* Left Column - Challenge Details */}

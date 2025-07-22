@@ -1,6 +1,8 @@
 import React from "react";
+import { MdSportsGymnastics } from "react-icons/md";
 import { FiPlay } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const HeroSection = ({ SidebarToggle }) => {
   const containerVariants = {
@@ -56,27 +58,30 @@ const HeroSection = ({ SidebarToggle }) => {
                 variants={itemVariants}
                 className="mt-8 flex flex-wrap gap-4"
               >
-                <button
-                  onClick={SidebarToggle}
-                  className="px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg shadow-md hover:bg-emerald-700 transition-all duration-200 cursor-pointer"
-                >
-                  Get Started
-                </button>
+                <Link to="/workouts">
+                  <button
+                    onClick={SidebarToggle}
+                    className="px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg shadow-md hover:bg-emerald-700 transition-all duration-200 cursor-pointer"
+                  >
+                    Get Started
+                  </button>
+                </Link>
+                <Link to="/challenges">
                 <button className="px-6 py-3 bg-white text-emerald-600 font-medium rounded-lg shadow-sm border border-emerald-200 hover:bg-emerald-50 transition-all duration-200 flex items-center cursor-pointer">
-                  <FiPlay className="h-4 w-4 mr-2" />
-                  How it works
+                  <MdSportsGymnastics className="h-4 w-4 mr-2"/>
+                  Take a Challenge
                 </button>
+                </Link>
               </motion.div>
             </motion.div>
           </div>
           {/* Right content - Phone mockup */}
           <div className="relative flex justify-center">
             <img
-              src="https://images.pexels.com/photos/4116172/pexels-photo-4116172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://plus.unsplash.com/premium_photo-1670505062582-fdaa83c23c9e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29ya291dHxlbnwwfHwwfHx8MA%3D%3D"
               alt="Fitness app on smartphone"
               className="rounded-xl shadow-2xl max-w-full h-auto object-cover"
             />
-
           </div>
         </div>
       </div>
