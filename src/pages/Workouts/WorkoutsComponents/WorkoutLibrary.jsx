@@ -172,12 +172,13 @@ export default function WorkoutLibrary() {
 
       {/* Stats Component */}
       <Stats stats={stats} />
+      
+      {/* Exercise Library Component */}
+      <ExerciseLibrary exercises={filteredExercises} onViewExercise={(exercise) => setSelectedExercise(exercise)} />
 
       {/* Featured Programs Component */}
       <FeaturedPrograms programs={featuredPrograms} onViewProgram={(program) => setSelectedProgram(program)} />
 
-      {/* Exercise Library Component */}
-      <ExerciseLibrary exercises={filteredExercises} onViewExercise={(exercise) => setSelectedExercise(exercise)} />
 
       {/* Create Workout Modal */}
       <AnimatePresence>

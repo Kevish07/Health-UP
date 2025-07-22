@@ -39,7 +39,7 @@ export default function Header({ searchQuery, setSearchQuery, onCreateWorkout })
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onCreateWorkout}
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-300"
+          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-300 cursor-pointer"
         >
           <Plus size={18} />
           <span>Create Workout</span>

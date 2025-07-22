@@ -8,8 +8,8 @@ export default function FeaturedPrograms({ programs, onViewProgram }) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.4 }}
-      className="mb-12"
+      transition={{ duration: 0.5, delay: 0.85 }}
+      className="mt-12"
     >
       <h2 className="text-2xl font-bold text-gray-800 mb-6">Featured Programs</h2>
 
