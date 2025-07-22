@@ -14,7 +14,7 @@ export default function LogMealForm({ mealForm, onChange, onSubmit }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div>
           <label htmlFor="mealType" className="block text-sm font-medium text-gray-700 mb-1">
-            Meal Type
+            Meal Type <span className="text-red-500">*</span>
           </label>
           <select
             id="mealType"
@@ -54,15 +54,15 @@ export default function LogMealForm({ mealForm, onChange, onSubmit }) {
           Food Item
         </label>
         <div className="relative">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
+          {/* <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} /> */}
           <input
             type="text"
             id="foodItem"
             name="foodItem"
-            placeholder="Search for food..."
+            placeholder="Enter your meal item..."
             value={mealForm.foodItem}
             onChange={onChange}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
           />
         </div>
       </div>
@@ -104,7 +104,7 @@ export default function LogMealForm({ mealForm, onChange, onSubmit }) {
 
         <div>
           <label htmlFor="calories" className="block text-sm font-medium text-gray-700 mb-1">
-            Calories
+            Calories <span className="text-red-500">*</span>
           </label>
           <input
             type="number"

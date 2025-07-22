@@ -8,7 +8,7 @@ export default function QuickAdd({ items, onQuickAdd }) {
       transition={{ duration: 0.5, delay: 0.3 }}
       className="bg-white p-6 rounded-lg shadow-sm"
     >
-      <h2 className="text-xl font-bold text-gray-800 mb-6">Quick Add</h2>
+      <h2 className="text-xl font-bold text-gray-800 mb-6">Quick Snack Add</h2>
 
       <div className="grid grid-cols-2 gap-4">
         {items.map((item, index) => (
