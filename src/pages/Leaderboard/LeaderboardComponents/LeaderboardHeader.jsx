@@ -14,7 +14,7 @@ const LeaderboardHeader = ({ period, onPeriodChange }) => {
       <div className="flex justify-center gap-4 mb-8">
         <button
           onClick={() => onPeriodChange('weekly')}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer ${
             period === 'weekly'
               ? 'bg-indigo-600 text-white shadow-lg scale-105'
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -24,7 +24,7 @@ const LeaderboardHeader = ({ period, onPeriodChange }) => {
         </button>
         <button
           onClick={() => onPeriodChange('monthly')}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer ${
             period === 'monthly'
               ? 'bg-indigo-600 text-white shadow-lg scale-105'
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
