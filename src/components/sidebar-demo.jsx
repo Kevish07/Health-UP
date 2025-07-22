@@ -7,7 +7,7 @@ import { CgGym } from "react-icons/cg";
 import { IoIosNutrition } from "react-icons/io";
 import { BsPeople } from "react-icons/bs";
 import { GoTrophy } from "react-icons/go";
-import { BarChart2, Users } from "lucide-react";
+import { BarChart2, Users, User } from "lucide-react";
 
 
 import { motion } from "framer-motion";
@@ -65,17 +65,9 @@ export default function SidebarDemo() {
         <div>
           <SidebarLink
             link={{
-              label: "Manu Arora",
+              label: "Dummy User",
               href: "/profile",
-              icon: (
-                <img
-                  src="https://assets.aceternity.com/manu.png"
-                  className="h-7 w-7 shrink-0 rounded-full"
-                  width={50}
-                  height={50}
-                  alt="Avatar"
-                />
-              ),
+              icon: <User />,
             }}
           />
         </div>
