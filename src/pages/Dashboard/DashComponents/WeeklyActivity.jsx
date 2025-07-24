@@ -22,7 +22,7 @@ const WeeklyActivity = () => {
   const activityData = [65, 40, 75, 85, 60, 30, 50];
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-sm mb-8 opacity-0 translate-y-5 animate-fade-in-up">
+    <div className="bg-white p-6 rounded-xl shadow-sm mb-8 translate-y-5 animate-fade-in-up">
       <h2 className="text-xl font-semibold mb-6">Weekly Activity</h2>
       
       <div className="flex justify-between items-end h-48">

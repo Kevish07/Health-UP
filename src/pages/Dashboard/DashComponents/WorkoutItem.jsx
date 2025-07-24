@@ -4,7 +4,7 @@ import { Play } from "lucide-react";
 const WorkoutItem = ({ icon, title, time, duration, iconBg, index }) => {
   return (
     <div
-      className="flex items-center justify-between p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 workout-item opacity-0 translate-y-5 animate-fade-in-up"
+      className="flex items-center justify-between p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 workout-item translate-y-5 animate-fade-in-up"
       style={{ animationDelay: `${300 + index * 100}ms` }}
     >
       <div className="flex items-center">

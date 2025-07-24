@@ -42,7 +42,7 @@ const MetricCard = ({ title, value, goalValue, icon, color, unit, index }) => {
 
   return (
     <div
-      className="bg-white p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md relative overflow-hidden opacity-0 translate-y-5 animate-fade-in-up"
+      className="bg-white p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md relative overflow-hidden translate-y-5 animate-fade-in-up"
       style={{ animationDelay: `${index * 150}ms` }}
     >
       <div className="flex justify-between mb-2">
